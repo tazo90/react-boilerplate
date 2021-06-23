@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../../resources/fonts/Inter.ttf');
+}
+
+@import 'variables';
+@import 'scaffolding';
+
+@import '~antd/dist/antd.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
