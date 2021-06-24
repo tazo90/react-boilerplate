@@ -36,7 +36,7 @@ module.exports = {
       ],
     }),
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
+      title: 'React Boilerplate',
       template: './public/template.html',
       filename: 'index.html',
     }),
