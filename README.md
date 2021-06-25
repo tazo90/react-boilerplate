@@ -1,3 +1,6 @@
+<p align="center">Modern react-boilerplate with useful integrations.</p>
+
+
 ## Quick start
 
 1. Clone repo `git clone https://github.com/tazo90/react-boilerplate.git <YOUR_PROJECT_NAME>`.
@@ -7,10 +10,15 @@
 
 Now you're try app at `http://localhost:3333`.
 
-## Stack
+## It's built with:
 
-- React
-- Webpack
-- Typescript
-- Antd
-- Tailwind
+- **Boilerplate**: React with Typescript
+- **Bundler**: Webpack
+- **State Management**: TODO
+- **UI Library**: Ant Design
+- **Styling**: TailwindCSS and Styled Components
+- **Forms**: TODO
+- **i18n**: TODO
+- **API**: TODO
+- **Testing**: TODO
+- **Code Style**: Prettier with pre-commit git hook
