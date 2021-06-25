@@ -36,7 +36,6 @@
     "no-template-curly-in-string": "error",
     "no-self-compare": "error",
     "func-names": ["error", "as-needed"],
-    "semi": [2, "never"],
     "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
   },
   "env": {
