@@ -3,7 +3,6 @@ import { Drawer } from 'antd';
 import styled from 'styled-components';
 
 import webpackLogo from '@resources/assets/webpack-logo.svg';
-
 import { Nav, NavItem } from '@/components/Nav';
 import { Recipes, recipesData } from '@/components/Recipes';
 
