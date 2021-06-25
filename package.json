@@ -29,6 +29,8 @@
     "eslint-plugin-react": "^7.24.0",
     "fibers": "^5.0.0",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
     "postcss-cli": "^8.3.1",
@@ -53,6 +55,16 @@
     "test": "jest",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,scss}\"",
     "eslint": "eslint src/**/*.{ts,tsx}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "repository": {
     "type": "git",
