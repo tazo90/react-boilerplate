@@ -1,23 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
-
-import { i18n } from '@lingui/core';
+import { i18n as lingui } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
 
 import '@/styles/index.scss';
 
 import App from '@/containers/App';
-import { messages as messagesEN } from '@/locales/en/messages';
-import { messages as messagesPL } from '@/locales/pl/messages';
+import i18n from '@/i18n';
 
-i18n.load({
-  en: messagesEN,
-  pl: messagesPL,
-});
-i18n.activate('en');
+i18n.load();
+i18n.setLanguage('en');
 
 render(
-  <I18nProvider i18n={i18n}>
+  <I18nProvider i18n={lingui}>
     <App />
   </I18nProvider>,
   document.getElementById('root')
