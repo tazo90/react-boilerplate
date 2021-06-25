@@ -12,13 +12,13 @@ Now you're try app at `http://localhost:3333`.
 
 ## It's built with:
 
-- **Boilerplate**: React with Typescript
-- **Bundler**: Webpack
+- **Boilerplate**: [React](https://github.com/facebook/react) with [Typescript](https://github.com/microsoft/TypeScript)
+- **Bundler**: [Webpack](https://github.com/webpack/webpack)
 - **State Management**: TODO
-- **UI Library**: Ant Design
-- **Styling**: TailwindCSS and Styled Components
-- **Forms**: TODO
-- **i18n**: TODO
+- **UI Library**: [Ant Design](https://github.com/ant-design/ant-design)
+- **Styling**: [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and [Styled Components](https://github.com/styled-components/styled-components)
+- **Forms**: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
+- **i18n**: [LinguiJS](https://github.com/lingui/js-lingui)
 - **API**: TODO
 - **Testing**: TODO
-- **Code Style**: Prettier with pre-commit git hook
+- **Code Style**: [Prettier](https://github.com/prettier/prettier) with [pre-commit git hook](https://github.com/typicode/husky)
