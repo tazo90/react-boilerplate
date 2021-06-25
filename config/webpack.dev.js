@@ -1,7 +1,7 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
 
-const { merge } = require('webpack-merge')
-const common = require('./webpack.common')
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -37,7 +37,7 @@ module.exports = merge(common, {
             loader: 'postcss-loader',
             options: {
               sourceMap: false,
-            }
+            },
           },
           {
             loader: 'sass-loader',
@@ -56,4 +56,4 @@ module.exports = merge(common, {
   },
 
   plugins: [new webpack.HotModuleReplacementPlugin()],
-})
+});

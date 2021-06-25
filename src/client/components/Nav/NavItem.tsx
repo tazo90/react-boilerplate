@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export interface NavItemProps {
-  href: string
-  isActive?: boolean
-  children: string
+  href: string;
+  isActive?: boolean;
+  children: string;
 }
 
 export function NavItem({ href, isActive, children }: NavItemProps) {
@@ -15,5 +15,5 @@ export function NavItem({ href, isActive, children }: NavItemProps) {
     >
       {children}
     </a>
-  )
+  );
 }

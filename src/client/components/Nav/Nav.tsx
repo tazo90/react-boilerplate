@@ -1,9 +1,9 @@
-import React from 'react'
-import { Button } from 'antd'
+import React from 'react';
+import { Button } from 'antd';
 
 export interface NavProps {
-  children: JSX.Element[]
-  toggleSideBar: (e: React.MouseEvent<HTMLButtonElement>) => void
+  children: JSX.Element[];
+  toggleSideBar: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export function Nav({ children, toggleSideBar }: NavProps) {
@@ -37,5 +37,5 @@ export function Nav({ children, toggleSideBar }: NavProps) {
         </div>
       </div>
     </nav>
-  )
+  );
 }

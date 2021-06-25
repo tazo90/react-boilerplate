@@ -1,4 +1,4 @@
-import { RecipeProps } from '@/components/List'
+import { RecipeProps } from '@/components/List';
 
 export const recipesData: RecipeProps[] = [
   {
@@ -18,4 +18,4 @@ export const recipesData: RecipeProps[] = [
     category: 'Technology',
     description: 'This way you can solve your hardest technology problems',
   },
-]
+];

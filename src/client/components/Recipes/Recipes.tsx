@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import { List, ListItem, RecipeProps } from '@/components/List'
+import { List, ListItem, RecipeProps } from '@/components/List';
 
 export interface RecipesProps {
-  recipes: RecipeProps[]
+  recipes: RecipeProps[];
 }
 
 export function Recipes({ recipes }: RecipesProps) {
@@ -13,5 +13,5 @@ export function Recipes({ recipes }: RecipesProps) {
         <ListItem key={recipe.id} recipe={recipe} />
       ))}
     </List>
-  )
+  );
 }

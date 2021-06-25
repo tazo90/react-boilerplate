@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
-import { Drawer, Button } from 'antd'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import { Drawer } from 'antd';
+import styled from 'styled-components';
 
-import webpackLogo from '@resources/assets/webpack-logo.svg'
+import webpackLogo from '@resources/assets/webpack-logo.svg';
 
-import { Nav, NavItem } from '@/components/Nav'
-import { Recipes, recipesData } from '@/components/Recipes'
+import { Nav, NavItem } from '@/components/Nav';
+import { Recipes, recipesData } from '@/components/Recipes';
 
 const Wrapper = styled.section`
   padding: 4em;
   background: papayawhip;
-`
+`;
 
 export default function App() {
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
 
   return (
     <Wrapper>
@@ -36,5 +36,5 @@ export default function App() {
         <img src={webpackLogo} />
       </Drawer>
     </Wrapper>
-  )
+  );
 }

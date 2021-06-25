@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
 
 export interface RecipeProps {
-  id: number
-  image: string
-  alt: string
-  title: string
-  category: string
-  description: string
+  id: number;
+  image: string;
+  alt: string;
+  title: string;
+  category: string;
+  description: string;
 }
 
 export interface ListItemProps {
-  key: number
-  recipe: RecipeProps
+  key: number;
+  recipe: RecipeProps;
 }
 
 export function ListItem({ recipe }: ListItemProps) {
@@ -39,5 +39,5 @@ export function ListItem({ recipe }: ListItemProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }
