@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
+import { Trans } from '@lingui/macro';
 
 export interface NavProps {
   children: JSX.Element[];
@@ -32,7 +33,7 @@ export function Nav({ children, toggleSideBar }: NavProps) {
             onClick={toggleSideBar}
             className="inline-block text-sm px-4 py-2 leading-none border-none rounded text-gray-500 bg-gray-50 hover:bg-gray-500 mt-4 lg:mt-0"
           >
-            Open
+            <Trans>Open</Trans>
           </Button>
         </div>
       </div>

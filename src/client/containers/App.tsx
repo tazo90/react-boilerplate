@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import styled from 'styled-components';
+import { Trans } from '@lingui/macro';
 
 import webpackLogo from '@resources/assets/webpack-logo.svg';
 import { Nav, NavItem } from '@/components/Nav';
@@ -18,10 +19,14 @@ export default function App() {
     <Wrapper>
       <Nav toggleSideBar={() => setVisible(true)}>
         <NavItem href="/featured" isActive>
-          Featured
+          <Trans>Featured</Trans>
         </NavItem>
-        <NavItem href="/popular">Popular</NavItem>
-        <NavItem href="/latest">Latest</NavItem>
+        <NavItem href="/popular">
+          <Trans>Popular</Trans>
+        </NavItem>
+        <NavItem href="/latest">
+          <Trans>Latest</Trans>
+        </NavItem>
       </Nav>
       <Recipes recipes={recipesData} />
       <Drawer
@@ -31,7 +36,9 @@ export default function App() {
         onClose={() => setVisible(false)}
         visible={visible}
       >
-        <p>Some contents...</p>
+        <p>
+          <Trans>Some contents</Trans>...
+        </p>
         <img src={webpackLogo} />
       </Drawer>
     </Wrapper>

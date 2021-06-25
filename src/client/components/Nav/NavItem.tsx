@@ -3,7 +3,7 @@ import React from 'react';
 export interface NavItemProps {
   href: string;
   isActive?: boolean;
-  children: string;
+  children: JSX.Element | string;
 }
 
 export function NavItem({ href, isActive, children }: NavItemProps) {
