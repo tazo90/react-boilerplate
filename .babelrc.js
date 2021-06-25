@@ -4,7 +4,7 @@ module.exports = function (api) {
     '@babel/preset-react',
     '@babel/preset-typescript',
   ];
-  const plugins = ['macros'];
+  const plugins = ['macros', 'react-refresh/babel'];
 
   /** this is just for minimal working purposes,
    * for testing larger applications it is

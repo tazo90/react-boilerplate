@@ -14,7 +14,7 @@ i18n.load({
   en: messagesEN,
   pl: messagesPL,
 });
-i18n.activate('pl');
+i18n.activate('en');
 
 render(
   <I18nProvider i18n={i18n}>

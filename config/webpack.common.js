@@ -6,6 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrettierPlugin = require('prettier-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
 module.exports = {
   entry: ['./src/client/index.tsx'],
 
@@ -53,6 +55,11 @@ module.exports = {
         test: /\.ts(x?)$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
+        options: {
+          plugins: [
+            isDevelopment && require.resolve('react-refresh/babel'),
+          ].filter(Boolean),
+        },
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/,
