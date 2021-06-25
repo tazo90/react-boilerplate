@@ -1,0 +1,34 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-06-26 00:33+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: pl\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/client/containers/App.tsx:22
+msgid "Featured"
+msgstr "Wyróżnione"
+
+#: src/client/containers/App.tsx:28
+msgid "Latest"
+msgstr "Najnowsze"
+
+#: src/client/components/Nav/Nav.tsx:36
+msgid "Open"
+msgstr "Otwórz"
+
+#: src/client/containers/App.tsx:25
+msgid "Popular"
+msgstr "Popularne"
+
+#: src/client/containers/App.tsx:40
+msgid "Some contents"
+msgstr "Pewna zawartość"
