@@ -81,6 +81,8 @@
     "i18n:extract": "lingui extract",
     "i18n:compile": "lingui compile --typescript",
     "test": "jest --config config/jest.config.js",
+    "test:e2e": "cypress run --config-file config/cypress.config.json",
+    "test:e2e:open": "cypress open --config-file config/cypress.config.json",
     "test:coverage": "jest --config config/jest.config.js --coverage --watchAll=false",
     "test:coverage:ci": "jest --config config/jest.config.js --ci --coverage --watchAll=false && cat ./coverage/lcov.info | coveralls"
   },
