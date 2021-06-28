@@ -14,7 +14,6 @@ Now you can try app at `http://localhost:3333`.
 
 - **Boilerplate**: [React](https://github.com/facebook/react) with [Typescript](https://github.com/microsoft/TypeScript)
 - **Bundler**: [Webpack](https://github.com/webpack/webpack)
-- **State Management**: TODO
 - **Forms**: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
 - **API**: [React Query](https://github.com/tannerlinsley/react-query)
 - **i18n**: [LinguiJS](https://github.com/lingui/js-lingui)
