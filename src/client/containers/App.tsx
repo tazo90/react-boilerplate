@@ -1,46 +1,24 @@
-import React, { useState } from 'react';
-import { Drawer } from 'antd';
-import styled from 'styled-components';
-import { Trans } from '@lingui/macro';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Spin } from 'antd';
 
-import webpackLogo from '@resources/assets/webpack-logo.svg';
-import { Nav, NavItem } from '@/components/Nav';
-import { Recipes, recipesData } from '@/components/Recipes';
-
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
+// Lazy loading pages
+const Home = lazy(() => import('../pages/Home'));
 
 export default function App() {
-  const [visible, setVisible] = useState(false);
-
   return (
-    <Wrapper>
-      <Nav toggleSideBar={() => setVisible(true)}>
-        <NavItem href="/featured" isActive>
-          <Trans>Featured</Trans>
-        </NavItem>
-        <NavItem href="/popular">
-          <Trans>Popular</Trans>
-        </NavItem>
-        <NavItem href="/latest">
-          <Trans>Latest</Trans>
-        </NavItem>
-      </Nav>
-      <Recipes recipes={recipesData} />
-      <Drawer
-        title="Basic drawer"
-        placement="right"
-        closable={false}
-        onClose={() => setVisible(false)}
-        visible={visible}
+    <Router>
+      <Suspense
+        fallback={
+          <div className="text-center pt-12">
+            <Spin></Spin>
+          </div>
+        }
       >
-        <p>
-          <Trans>Some contents</Trans>...
-        </p>
-        <img src={webpackLogo} />
-      </Drawer>
-    </Wrapper>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Suspense>
+    </Router>
   );
 }
