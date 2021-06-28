@@ -8,7 +8,7 @@
 3. Install dependencies: `npm install`.
 4. Run project: `npm run dev`.
 
-Now you're try app at `http://localhost:3333`.
+Now you can try app at `http://localhost:3333`.
 
 ## It's built with:
 

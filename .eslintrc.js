@@ -4,7 +4,7 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: __dirname,
     project: './tsconfig.json',
-    allowImportExportEverywhere: true
+    allowImportExportEverywhere: true,
   },
   extends: [
     'plugin:react/recommended',
