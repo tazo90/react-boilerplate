@@ -15,10 +15,10 @@ Now you're try app at `http://localhost:3333`.
 - **Boilerplate**: [React](https://github.com/facebook/react) with [Typescript](https://github.com/microsoft/TypeScript)
 - **Bundler**: [Webpack](https://github.com/webpack/webpack)
 - **State Management**: TODO
+- **Forms**: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
+- **API**: TODO
+- **i18n**: [LinguiJS](https://github.com/lingui/js-lingui)
 - **UI Library**: [Ant Design](https://github.com/ant-design/ant-design)
 - **Styling**: [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and [Styled Components](https://github.com/styled-components/styled-components)
-- **Forms**: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
-- **i18n**: [LinguiJS](https://github.com/lingui/js-lingui)
-- **API**: TODO
-- **Testing**: TODO
+- **Testing**: [Jest](https://github.com/facebook/jest) with [React Testing Library](https://github.com/testing-library/react-testing-library) and [Cypress](https://github.com/cypress-io/cypress)
 - **Code Style**: [Prettier](https://github.com/prettier/prettier) with [pre-commit git hook](https://github.com/typicode/husky)
