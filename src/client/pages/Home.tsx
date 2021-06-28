@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Drawer } from 'antd';
+import { Drawer, Spin } from 'antd';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
+import { useQuery } from 'react-query';
 
 import webpackLogo from '@resources/assets/webpack-logo.svg';
 import { Nav, NavItem } from '@/components/Nav';
-import { Recipes, recipesData } from '@/components/Recipes';
+import { Recipes } from '@/components/Recipes';
 
 const Wrapper = styled.section`
   padding: 4em;
@@ -14,6 +15,19 @@ const Wrapper = styled.section`
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
+
+  const {
+    isLoading,
+    error,
+    data: recipesData,
+  } = useQuery('recipes', async () => {
+    const recipesData = await (
+      await fetch(
+        'https://run.mocky.io/v3/0874bdc1-a42c-43db-9026-2ae8ce03f2b1'
+      )
+    ).json();
+    return recipesData;
+  });
 
   return (
     <Wrapper>
@@ -28,7 +42,7 @@ export default function Home() {
           <Trans>Latest</Trans>
         </NavItem>
       </Nav>
-      <Recipes recipes={recipesData} />
+      {recipesData ? <Recipes recipes={recipesData} /> : <Spin />}
       <Drawer
         title="Basic drawer"
         placement="right"

@@ -16,7 +16,7 @@ Now you can try app at `http://localhost:3333`.
 - **Bundler**: [Webpack](https://github.com/webpack/webpack)
 - **State Management**: TODO
 - **Forms**: [React Hook Form](https://github.com/react-hook-form/react-hook-form)
-- **API**: TODO
+- **API**: [React Query](https://github.com/tannerlinsley/react-query)
 - **i18n**: [LinguiJS](https://github.com/lingui/js-lingui)
 - **UI Library**: [Ant Design](https://github.com/ant-design/ant-design)
 - **Styling**: [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and [Styled Components](https://github.com/styled-components/styled-components)
