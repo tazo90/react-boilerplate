@@ -1,6 +1,6 @@
-const path = require('path');
+import path from 'path';
 
-const wp = require('@cypress/webpack-preprocessor');
+import wp from '@cypress/webpack-preprocessor';
 
 const webpackOptions = {
   resolve: {
@@ -30,4 +30,4 @@ const webpackOptions = {
 
 const options = { webpackOptions };
 
-module.exports = wp(options);
+export default wp(options);
